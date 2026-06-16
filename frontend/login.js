@@ -1,3 +1,15 @@
+if(data.token){
+
+localStorage.setItem(
+"token",
+data.token
+);
+
+alert("Login Successful");
+
+window.location.href="admin.html";
+
+}
 async function login(){
 
 

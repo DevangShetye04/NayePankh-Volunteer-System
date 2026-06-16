@@ -1,3 +1,8 @@
+if(!localStorage.getItem("token")){
+
+window.location.href="login.html";
+
+}
 window.onload = function(){
 
     getVolunteers();
@@ -147,7 +152,7 @@ if(confirmDelete){
 
 
 await fetch(
-`http://localhost:5000/api/volunteers/${id}`,
+`https://nayepankh-backend-fzmz.onrender.com/api/volunteers/${id}`,
 {
 
 method:"DELETE"
@@ -166,31 +171,12 @@ getVolunteers();
 
 }
 
-/*function downloadCSV(){
-
-window.open(
-"http://localhost:5000/api/reports/csv"
-);
-
-
-}
-
-
-
-function downloadPDF(){
-
-window.open(
-"http://localhost:5000/api/reports/pdf"
-);
-
-
-}*/
 
 function downloadCSV(){
 
 
 fetch(
-"http://localhost:5000/api/reports/csv",
+"https://nayepankh-backend-fzmz.onrender.com/api/reports/csv",
 {
 
 headers:{
@@ -238,7 +224,7 @@ function downloadPDF(){
 
 
 fetch(
-"http://localhost:5000/api/reports/pdf",
+"https://nayepankh-backend-fzmz.onrender.com/api/reports/pdf",
 {
 
 headers:{
