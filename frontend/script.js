@@ -74,7 +74,7 @@ button.innerHTML="Submitting...";
 
 button.disabled=true;
 
-fetch("http://localhost:5000/api/volunteers",{
+fetch("https://nayepankh-backend-fzmz.onrender.com/api/volunteers",{
 
 
 method:"POST",

@@ -14,7 +14,7 @@ async function getVolunteers(){
 
 
 let response = await fetch(
-"http://localhost:5000/api/volunteers"
+"https://nayepankh-backend-fzmz.onrender.com/api/volunteers"
 );
 
 
