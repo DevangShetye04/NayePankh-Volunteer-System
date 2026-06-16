@@ -141,7 +141,7 @@ document.getElementById(
 
 getVolunteers();
 
-async function deleteVolunteer(id){
+/*async function deleteVolunteer(id){
 
 
 let confirmDelete =
@@ -168,6 +168,42 @@ getVolunteers();
 
 }
 
+
+}*/
+
+async function deleteVolunteer(id){
+
+
+let confirmDelete =
+confirm("Are you sure?");
+
+
+if(confirmDelete){
+
+
+await fetch(
+`https://nayepankh-backend-fzmz.onrender.com/api/volunteers/${id}`,
+{
+
+method:"DELETE",
+
+headers:{
+
+Authorization:
+localStorage.getItem("token")
+
+}
+
+});
+
+
+alert("Deleted");
+
+
+getVolunteers();
+
+
+}
 
 }
 
@@ -263,10 +299,6 @@ a.click();
 });
 
 
-}
-
-headers:{
-Authorization: localStorage.getItem("token")
 }
 
 function logout(){
