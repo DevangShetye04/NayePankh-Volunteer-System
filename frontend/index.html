@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NayePankh Volunteer Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+
+<nav>
+
+
+<h1>
+NayePankh Foundation
+</h1>
+
+
+<div class="nav-links">
+
+
+<a href="index.html">
+Home
+</a>
+
+
+<a href="index.html">
+Register
+</a>
+
+
+<a href="login.html">
+🔐 Admin Login
+</a>
+
+
+</div>
+
+
+</nav>
+
+
+
+</header>
+
+
+<div class="container">
+
+    <h2>Volunteer Registration Form</h2>
+
+    <form id="volunteerForm">
+
+
+        <label>Full Name</label>
+        <input type="text" id="name" required>
+
+
+        <label>Email</label>
+        <input type="email" id="email" required>
+
+
+        <label>Phone Number</label>
+        <input type="number" id="phone" required>
+
+
+        <label>Age</label>
+        <input type="number" id="age" required>
+
+
+        <label>Gender</label>
+
+        <select id="gender">
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+        </select>
+
+
+
+        <label>City</label>
+        <input type="text" id="city">
+
+
+
+        <label>Skills</label>
+
+        <div class="skills">
+
+            <label>
+            <input type="checkbox" value="Teaching">
+            Teaching
+            </label>
+
+
+            <label>
+            <input type="checkbox" value="Event Management">
+            Event Management
+            </label>
+
+
+            <label>
+            <input type="checkbox" value="Social Media">
+            Social Media
+            </label>
+
+
+            <label>
+            <input type="checkbox" value="Fundraising">
+            Fundraising
+            </label>
+
+
+        </div>
+
+
+
+        <label>Availability</label>
+
+        <select id="availability">
+
+            <option>Weekdays</option>
+
+            <option>Weekend</option>
+
+            <option>Anytime</option>
+
+        </select>
+
+
+
+        <label>
+        Why do you want to volunteer?
+        </label>
+
+        <textarea id="reason"></textarea>
+
+
+
+        <button type="submit">
+            Register
+        </button>
+
+
+    </form>
+
+
+</div>
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
